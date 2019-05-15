@@ -21,7 +21,7 @@ public class Book implements Serializable {
 	private Date date;
 	@OneToMany(mappedBy = "book", cascade = CascadeType.ALL)
 	private List<Page> pages = new ArrayList<Page>();
-
+//adeu
 	@Override
 	public int hashCode() {
 		final int prime = 31;
