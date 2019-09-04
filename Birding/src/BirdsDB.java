@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class BirdsDB {
 	//A DB made from a list
 	//Contains all bird objects created in the program
+	//hola esto es una tonteria, si?????
 	
 	//create ArrayObject of Bird objects
 	private ArrayList<Bird> birds;
