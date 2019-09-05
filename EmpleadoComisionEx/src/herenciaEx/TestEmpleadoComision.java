@@ -22,7 +22,7 @@ public class TestEmpleadoComision {
 
 	public static void main(String[] args) {
 		
-		
+		//crear objecte
 		//Fecha f1 = new Fecha();
 		/*
 		 * EmpleadoComision ec = new EmpleadoComision("Fuckencio Martinez", new
