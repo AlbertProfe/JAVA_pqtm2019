@@ -3,10 +3,10 @@ Exercicis de pissarra de JAVA PQTM 2019 Violeta
 
 
 # JAVA SE y JAVA EE Spring y Arquitecturas Web
-> Este proyecto pretende ser un repositorio de ejemplos sencillo de patrones básicos UML y patrones Web 
-> #### Centro: *CIFO La Violeta* (https://serveiocupacio.gencat.cat/es/soc/centres-dinnovacio-i-formacio-ocupacional-cifo/barcelona-la-violeta/)
+> Aquest projecte pretén ser un repositori d'exemples senzills de patrons bàsics UML i patrons Web 
+> #### Centre: *CIFO La Violeta* (https://serveiocupacio.gencat.cat/es/soc/centres-dinnovacio-i-formacio-ocupacional-cifo/barcelona-la-violeta/)
 > #### Plan: *Plan de Cualificación en Tecnología Móvil - PQTM 2019* (https://serveiocupacio.gencat.cat/es/detall/article/PQTM-2019) (https://serveiocupacio.gencat.cat/ca/soc/centres-dinnovacio-i-formacio-ocupacional-cifo/cifo-lhospitalet-de-llobregat/pqtm/competencies/index.html)
-> #### Curso: *Desenvolupament JAVA PQTM* (https://serveiocupacio.gencat.cat/ca/soc/centres-dinnovacio-i-formacio-ocupacional-cifo/cifo-lhospitalet-de-llobregat/pqtm/desenvolupador-java/index.html)
+> #### Curs: *Desenvolupament JAVA PQTM* (https://serveiocupacio.gencat.cat/ca/soc/centres-dinnovacio-i-formacio-ocupacional-cifo/cifo-lhospitalet-de-llobregat/pqtm/desenvolupador-java/index.html)
 
 
 
