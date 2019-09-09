@@ -1,8 +1,8 @@
 # JAVA_pqtm2019
-Exercicis de pissarra de JAVA PQTM 2019 Violeta
+Projectes d'exemple de JAVA PQTM 2019 Violeta
 
 
-# JAVA SE y JAVA EE Spring y Arquitecturas Web
+# JAVA SE y JAVA EE Spring y Arquitectures Web
 > Aquest projecte pretén ser un repositori d'exemples senzills de patrons bàsics UML i patrons Web 
 > #### Centre: *CIFO La Violeta* (https://serveiocupacio.gencat.cat/es/soc/centres-dinnovacio-i-formacio-ocupacional-cifo/barcelona-la-violeta/)
 > #### Plan: *Plan de Cualificación en Tecnología Móvil - PQTM 2019* (https://serveiocupacio.gencat.cat/es/detall/article/PQTM-2019) (https://serveiocupacio.gencat.cat/ca/soc/centres-dinnovacio-i-formacio-ocupacional-cifo/cifo-lhospitalet-de-llobregat/pqtm/competencies/index.html)
@@ -11,7 +11,7 @@ Exercicis de pissarra de JAVA PQTM 2019 Violeta
 
 
 
-### Tecnologías necesarias
+### Tecnologíes necesaries
 * Java SE y EE
 * Maven
 * GitHub
