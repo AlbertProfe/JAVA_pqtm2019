@@ -19,6 +19,22 @@ Projectes d'exemple de JAVA PQTM 2019 Violeta
 * Intellj Idea
 * Spring Legacy 3.9 / Spring Boot / Spring MVC
 
+## Objectius
+Formar desenvolupadors junior en Java que programin aplicacions preferentment en entorn
+servidor (back-end) fent servir les tecnologies com Java EE, Spring MVC, Hibernate... que interactuïn
+amb bases de dades, i rebin formació complementària (soft-skills) en documentació , control de
+versions, processos de compilació i distribució de programari automatitzat, entorns de proves...
+
+## Entorn professional
+El programador s'encarrega de crear, escriure, verificar i mantenir programari informàtic. També
+resol errors, elabora la documentació tècnica i els manuals, i ajuda als usuaris.
+En entorn servidor s&#39;ocuparà del tractament de dades (GET, POST, FILES, COOKIES) rebudes, crear o
+modificar documents amb la informació disponibles a les bases de dades i altres fonts, manipular
+dades, implementar serveis HTTP, etc.
+1. Ocupacions: Analista informàtic, Desenvolupador/a d’aplicacions web, Programador/a, Expert/a en
+aplicacions TIC...
+2. Tecnologies: UML/Java/Java EE/JPA/MVC/Spring/Hibernate/SQL/Serveis REST/Git/
+
 
 ### Clonar en repositorio en tu equipo mediante consola:
 1. Situarse en una carpeta raíz donde se encuentran los proyectos, mediante la consola:  
@@ -30,3 +46,4 @@ Projectes d'exemple de JAVA PQTM 2019 Violeta
 1. **Import Project**, y seleccionar la carpeta del proyecto
 1. Marcar **Create Project from external model**, elegir **Maven**
 1. **Next** … **Finish**
+
