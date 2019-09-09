@@ -11,7 +11,7 @@ Projectes d'exemple de JAVA PQTM 2019 Violeta
 
 
 
-### Tecnologíes necesaries
+### Tecnologies necessàries
 * Java SE y EE
 * Maven
 * GitHub
