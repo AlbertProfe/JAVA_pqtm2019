@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<link rel="stylesheet"
+	href="/webjars/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="/webjars/jquery/3.0.0/jquery.min.js"></script>
+<script src="/webjars/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+
+var header;
+$(document).ready(function() {
+	// hides inputNewBook form at first and loads table
+	$("#form").hide();
+	$("#library").hide();
+	loadTable();
+	
+	$("#formNewBook").submit(function() {
+		// hides primary form library and shows inputNewBook form
+		$("#library").hide();
+		$("#form").show();
+		console.log("Header is "+header);
+		return false;
+	})
+	 $("#formLogin").submit(function() {
+		
+		login();
+		return false;
+	 })
+	
+	$("#form").submit(function() {
+		// data from form with jquery
+		var book={title:$("#title").val(),
+				 isbn:$("#isbn").val(),pages:$("#pages").val()};
+		
+		
+		console.log("Header is: "+ header);
+		// ajax post request with jquery
+		
+		var requestClient = $.ajax({type:"POST" ,
+				beforeSend: function(request) {
+			    request.setRequestHeader("Authorization", header);
+			    console.log(header);
+			  },
+			  crossDomain: true,
+				xhrFields: {
+			      withCredentials: true
+			   },
+				url:"http://localhost:8080/webapi/books",
+				contentType: "application/json; charset=utf-8",
+				data:JSON.stringify(book)})
+				
+		.then(function() {
+				
+			return loadTable();})
+			
+		.then(function(library) {
+			//comeback from inputdata form -inputNewBook- 
+			//to library primary view
+			console.log(library);
+			$("#form").hide();
+			$("#library").show();
+            
+			$(".table").empty();
+			
+			library.forEach(function(book) {
+					console.log(book);
+					$(".table").append(templateTable(book));
+			})
+
+		});
+		return false;
+	})
+})
+
+function loadTable() {
+		
+	console.log("Header is : "+ header);
+	
+	return $.ajax({type:"GET",
+		url:"http://localhost:8080/webapi/books",
+		contentType: "application/json; charset=utf-8",
+		crossDomain: true,
+		beforeSend: function(request) {
+		    request.setRequestHeader("Authorization", header);
+		  },
+		xhrFields: {
+		      withCredentials: true
+		   },	})
+}
+
+	
+function login() {
+		
+		
+		var user = {name:$("#user").val(),password:$("#password").val()};
+		console.log(user);
+		var requestClient = $.ajax({type:"POST" ,
+				url:"http://localhost:8080/webapi/login",
+				contentType: "application/json; charset=utf-8",
+				crossDomain: true,
+				xhrFields: {
+				      withCredentials: true
+				   },
+				data:JSON.stringify(user),
+			
+				success: function(datos,status,requestClient) {
+					
+						console.log(requestClient.getResponseHeader("authorization"));
+						header = requestClient.getResponseHeader("authorization");				
+						console.log(header);
+						$("#login").hide();
+						$("#library").show();
+						console.log("Before-Then");
+				}
+				
+		}).then(function() {
+			console.log("Then-1");
+			
+			return loadTable();
+			
+		}).then(function(library) {
+			
+			console.log("Then-2");
+			console.log(library);
+			
+			$(".table").empty();
+			$("#login").hide();
+			$("#library").show();
+			
+			
+			
+			library.forEach(function(book) {
+					console.log(book);
+					$(".table").append(templateTable(book));
+			})
+		});	
+	}	
+	
+	
+	
+
+function templateTable(book) {
+	var template=
+		`<tr>
+	     <td>${book.title}</td>
+	     <td>${book.isbn}</td>
+	     <td>${book.pages}</td>
+	  </tr>`
+	  return template;
+}
+
+
+
+
+
+</script>
+<style>
+table, form {
+	margin: 20px;
+}
+</style>
+</head>
+<div id="library">
+	<table class="table">
+    </table>
+	<form action="form" id="formNewBook">
+		<input type="submit" value="NEW" class="btn btn-primary" />
+	</form>
+</div>
+
+
+
+<div id="login">
+	<form action="" id="formLogin">
+		<div class="form-group">
+			<label for="user">User:</label> <input type="text" name="user"
+				class="form-control" id="user" />
+		</div>
+
+		<div class="form-group">
+			<label for="password">Password:</label><input type="text"
+				name="password" class="form-control" id="password" />
+		</div>
+	
+		<div class="form-group">
+			<input type="submit" value="SEND USER" class="btn btn-primary" />
+		</div>
+	</form>
+</div>
+
+
+
+
+<div id="form">
+	<form action="insertBook">
+		<div class="form-group">
+			<label for="title">Title:</label> <input type="text" name="title"
+				class="form-control" id="title" />
+		</div>
+		<div class="form-group">
+			<label for="isbn">ISBN:</label><input type="text" name="isbn"
+				class="form-control" id="isbn" />
+		</div>
+		<div class="form-group">
+			<label for="pages">Pages:</label><input type="text" name="pages"
+				class="form-control" id="pages" />
+		</div>
+		<div class="form-group">
+			<input type="submit" value="SEND NEW BOOK" class="btn btn-primary" />
+		</div>
+	</form>
+</div>
+
+
+</html>
+

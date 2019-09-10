@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<link rel="stylesheet" href="/webjars/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="/webjars/jquery/3.0.0/jquery.min.js"></script>
+<script src="/webjars/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<style>
+table , form {
+	margin:20px;
+}
+
+</style>
+</head>
+<table>
+	<tr th:each="book:${library}">
+
+		<td th:text="${book.title}"></td>
+		<td th:text="${book.ISBN}"></td>
+		<td th:text="${book.pages}"></td>
+
+            <td><a th:href="@{deleteBook(title=${book.title})}"  
+               class="btn btn-primary">DELETE</a></td>
+
+	</tr>
+</table>
+
+<form action="newBook">
+<input type="submit" value="NEW" class="btn btn-primary"/>
+
+</form>
+</html>
+

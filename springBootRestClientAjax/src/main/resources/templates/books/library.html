@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<link rel="stylesheet" href="/webjars/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="/webjars/jquery/3.0.0/jquery.min.js"></script>
+<script src="/webjars/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+	
+	$("#form").hide();
+	
+	loadTable();
+	
+	$("#formNewBook").submit(function() {
+		
+		$("#library").hide();
+		$("#form").show();
+		return false;
+	})
+
+	
+	$("#form").submit(function() {
+		// lee los datos del formulario con jquery
+		var book={title:$("#title").val(),isbn:$("#isbn").val(),pages:$("#pages").val()};
+		
+		//realizamos una peticion ajax con post en jquery
+		var request=$.ajax({type:"POST",
+				url:"http://localhost:8080/webapi/books",
+				contentType: "application/json; charset=utf-8",
+				data:JSON.stringify(book)
+				
+		}).then(function() {
+				
+			return loadTable();
+			
+		}).done(function() {
+			//cambia las vistas que se presentan pasamos del formulario a la lista
+			$("#library").show();
+			$("#form").hide();
+			
+		});
+		
+	
+		return false;
+	})
+	
+})
+
+function loadTable() {
+	
+	
+	return $.get("http://localhost:8080/webapi/books",function(library) {
+		
+		$(".table").empty();
+		
+		library.forEach(function(book) {
+			
+				$(".table").append(templateTable(book));
+		})
+		
+	});
+	
+}
+
+
+function templateTable(book) {
+
+	var template=
+		`<tr>
+	     <td>${book.title}</td>
+	     <td>${book.isbn}</td>
+	     <td>${book.pages}</td>
+	  </tr>`
+	  return template;
+}
+
+
+
+
+
+</script>
+<style>
+table , form {
+	margin:20px;
+}
+
+</style>
+</head>
+<div id="library">
+	<table class="table">
+
+	</table>
+
+
+	<form action="form" id="formNewBook">
+		<input type="submit" value="NEW" class="btn btn-primary" />
+	</form>
+
+</div>
+
+
+
+<div id="form">
+<form action="insertBook">
+		<div class="form-group">
+			<label for="nombre">Title:</label> <input type="text" name="title"
+				class="form-control" id="title" />
+		</div>
+
+		<div class="form-group">
+			<label for="apellidos">ISBN:</label><input type="text"
+				name="isbn" class="form-control" id="isbn" />
+		</div>
+		<div class="form-group">
+			<label for="edad">Pages:</label><input type="text" name="pages"
+				class="form-control" id="pages" />
+		</div>
+		<div class="form-group">
+			<input type="submit" value="SEND" class="btn btn-primary" />
+		</div>
+	</form>
+
+</div>
+
+
+</html>
+
+

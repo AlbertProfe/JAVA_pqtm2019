@@ -1,0 +1,12 @@
+insert into books values ('Java','E1234567',560);
+insert into books values ('PHP','E123445',560);
+insert into books values ('JS','E1234596',156);
+insert into books values ('C++','E1234149',526);
+insert into books values ('C','E1234354',5236);
+insert into books values ('C#','E1234521',2356);
+insert into books values ('Swift','E1212967',36556);
+insert into books values ('Dockers','E1485937',5546);
+insert into books values ('REST','E1231897',5666);
+insert into books values ('SOAP','E1236347',5602);
+insert into books values ('Design Patterns','E9874567',1056);
+insert into books values ('Java 2','E8974567',96056);
