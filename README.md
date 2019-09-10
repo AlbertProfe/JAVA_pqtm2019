@@ -9,6 +9,12 @@ Projectes d'exemple de JAVA PQTM 2019 Violeta
 > #### Curs: *Desenvolupament JAVA PQTM* (https://serveiocupacio.gencat.cat/ca/soc/centres-dinnovacio-i-formacio-ocupacional-cifo/cifo-lhospitalet-de-llobregat/pqtm/desenvolupador-java/index.html)
 
 
+# JAVA SE/EE: recursos web
+> Aquest projecte pretén ser un repositori d'exemples senzills de patrons bàsics UML i patrons Web 
+> #### Curs gratuit JAVA SE: *Universitat Helsinki MOOC JAVA* (https://moocfi.github.io/courses/2013/programming-part-1/)
+> #### Master UPM Videos i codi JAVA Spring Boot: *UMP MIW* (https://www.youtube.com/playlist?list=PLj2IVmcP-_QNBBjqZxShU13kKO48ISbvP)
+> #### Documentació oficial SPRING: *Spring IO* (https://spring.io/)
+> #### Crear un projecte Spring Boot: *Spring Initializr Bootstrap your application * (https://start.spring.io/)
 
 
 ### Tecnologies necessàries
