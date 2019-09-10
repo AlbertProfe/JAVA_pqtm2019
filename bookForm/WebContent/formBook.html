@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="ServBook" method="post">
+		Book:<br>
+		<br>
+		<br> Book Title:<br> <input type="text" name="bookTitle"
+			value="Anna Karenina"><br> Author:<br> <input
+			type="text" name="author" value="Tolstoi"><br> ISBN:<br>
+		<input type="text" name="isbn" value="78-1-2345-6789-7|2-8765-4301-X"><br>
+		<br>
+		<br>
+		<br> Language:<br> <input type="radio" name="lang"
+			value="russian" checked> Original Russian<br> <input
+			type="radio" name="lang" value="english"> English<br> <input
+			type="radio" name="lang" value="spanish"> Spanish <br> <input
+			type="radio" name="lang" value="catalan"> Catalan <br> <br>
+		<br>
+		<br> Type:<br> <select name="typeBook" multiple>
+			<option value="eBook">eBook</option>
+			<option value="paper">Paper</option>
+
+		</select> <input type="submit" value="Submit">
+	</form>
+
+</body>
+</html>
