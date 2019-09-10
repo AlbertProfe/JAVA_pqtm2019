@@ -13,8 +13,9 @@ Projectes d'exemple de JAVA PQTM 2019 Violeta
 > Documentació, cursos, tutorials i videos útils 
 > #### Curs gratuit JAVA SE: *Universitat Helsinki MOOC JAVA* (https://moocfi.github.io/courses/2013/programming-part-1/)
 > #### Master UPM Videos i codi JAVA Spring Boot: *UMP MIW* (https://www.youtube.com/playlist?list=PLj2IVmcP-_QNBBjqZxShU13kKO48ISbvP)
-> ####  Documentació oficial SPRING: *Spring IO* (https://spring.io/)
-> #### Crear un projecte Spring Boot: *Spring Initializr Bootstrap your application* (https://start.spring.io/)
+> #### Documentació oficial SPRING: *Spring IO* (https://spring.io/)
+> #### SPRING Developer: *Canal Youtube oficial de Spring* (https://www.youtube.com/channel/UC7yfnfvEUlXUIfm8rGLwZdA)
+> #### Crear un projecte Spring Boot: *Spring Initializr: Bootstrap your application* (https://start.spring.io/)
 
 
 ### Tecnologies necessàries
