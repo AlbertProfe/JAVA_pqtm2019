@@ -26,7 +26,7 @@ public class ServBook extends HttpServlet {
 		for (int j = 0; j < list.length; j++) {
 			pw.println(list[j]);
 		}
-
+//CLOSE
 		pw.close();
 
 	}
