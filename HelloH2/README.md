@@ -5,9 +5,9 @@
 ## Step by step:
 
 1. Download from H2 web the Windows Installer (http://www.h2database.com/h2-setup-2019-03-13.exe) and install the package.
-2. Download from H2 web the .jar file library h2-1.4.199 (http://repo2.maven.org/maven2/com/h2database/h2/1.4.199/h2-1.4.199.jar)
+2. Download from H2 web the .jar file library h2-1.4.199.jar (http://repo2.maven.org/maven2/com/h2database/h2/1.4.199/h2-1.4.199.jar)
 3. Test the db H2 on mode server (create a db if it's necessary)
-4. Create the Java Project and configure path, external library.
+4. Create the Java Project and configure path, external library: h2-1.4.199.jar.
 5. Download, print and pin on your wall cork: (http://www.sqltutorial.org/wp-content/uploads/2016/04/SQL-cheat-sheet.pdf)
 6. If you don't like cork, so you are a web guy, go: (https://www.w3schools.com/sql/)
 7. You may start practicing with that: (https://docs.oracle.com/cd/E17952_01/workbench-en/wb-documenting-sakila.html)
