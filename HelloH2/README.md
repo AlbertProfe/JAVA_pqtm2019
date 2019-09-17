@@ -8,7 +8,7 @@
 2. Download from H2 web the .jar file library h2-1.4.199 (http://repo2.maven.org/maven2/com/h2database/h2/1.4.199/h2-1.4.199.jar)
 3. Test the db H2 on mode server (create a db if it's necessary)
 4. Create the Java Project and configure path, external library.
-5. Study and pin on your wall cork: (http://www.sqltutorial.org/wp-content/uploads/2016/04/SQL-cheat-sheet.pdf)
+5. Download, print and pin on your wall cork: (http://www.sqltutorial.org/wp-content/uploads/2016/04/SQL-cheat-sheet.pdf)
 
 
 
