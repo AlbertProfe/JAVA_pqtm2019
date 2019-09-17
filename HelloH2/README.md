@@ -9,7 +9,7 @@
 3. Test the db H2 on mode server (create a db if it's necessary)
 4. Create the Java Project and configure path, external library.
 5. Download, print and pin on your wall cork: (http://www.sqltutorial.org/wp-content/uploads/2016/04/SQL-cheat-sheet.pdf)
-6. If you don't like cork, your are a web guy, so: (https://www.w3schools.com/sql/)
+6. If you don't like cork, so you are a web guy, go: (https://www.w3schools.com/sql/)
 
 
 
