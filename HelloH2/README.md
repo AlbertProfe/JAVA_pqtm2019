@@ -1,12 +1,15 @@
 # Welcome to H2, the Java SQL database. [![Build Status](https://travis-ci.org/h2database/h2database.svg?branch=master)](https://travis-ci.org/h2database/h2database)
 
 
+
 ## Step by step:
 
 1. Download fromm H2 web the Windows Installer (http://www.h2database.com/h2-setup-2019-03-13.exe) and intall the package.
 2. Download fromm H2 web the .jar file library h2-1.4.199 (http://repo2.maven.org/maven2/com/h2database/h2/1.4.199/h2-1.4.199.jar)
 3. Test the db H2 on mode server (create a db if it's necessary)
 4. Create the Java Project and configure path, external library.
+5. Study and pin on your wall cork: (http://www.sqltutorial.org/wp-content/uploads/2016/04/SQL-cheat-sheet.pdf)
+
 
 
 ## The main features of H2 are:
