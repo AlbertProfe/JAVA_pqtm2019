@@ -13,6 +13,8 @@
 7. You may start practicing with that: (https://docs.oracle.com/cd/E17952_01/workbench-en/wb-documenting-sakila.html)
 
 
+![H2 setting new db on mode server](https://github.com/AlbertProfe/JAVA_pqtm2019/blob/master/HelloH2/h2.setting.jpg)
+
 
 ## The main features of H2 are:
 
