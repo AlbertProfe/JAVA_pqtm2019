@@ -10,6 +10,7 @@
 4. Create the Java Project and configure path, external library.
 5. Download, print and pin on your wall cork: (http://www.sqltutorial.org/wp-content/uploads/2016/04/SQL-cheat-sheet.pdf)
 6. If you don't like cork, so you are a web guy, go: (https://www.w3schools.com/sql/)
+7. You may start practicing with that: (https://docs.oracle.com/cd/E17952_01/workbench-en/wb-documenting-sakila.html)
 
 
 
