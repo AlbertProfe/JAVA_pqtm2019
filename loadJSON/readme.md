@@ -57,16 +57,16 @@ http://jsonviewer.stack.hu/
 
 ## GOOGLE
  
-api			https://sheets.googleapis.com/v4/spreadsheets/{sheet_id}/values/Sheet1!A1:D5?key={YOUR_API_KEY}
+api:				https://sheets.googleapis.com/v4/spreadsheets/{sheet_id}/values/Sheet1!A1:D5?key={YOUR_API_KEY}
 	
-1. keyuser (albertp)	**AIzaSyB6KLXPqUPIAB05O4r4C8goHZx3e3dAYKc**
-2. domain		**https://sheets.googleapis.com**
-3. sheet id		**1QQnJadZm5iwF2aBqy5ByllxV-WIH9Wf-7D4wmtzibsk**	
-4. query your SHEET	**/v4/spreadsheets/{spreadsheetId}**
-5. query your SHEET	**values/Sheet1!A1:D5**
-6. API GET		**https://sheets.googleapis.com/v4/spreadsheets/1QQnJadZm5iwF2aBqy5ByllxV-WIH9Wf-7D4wmtzibsk/values/dades!A1:g44**	
-7. query your KEY	**?key={YOUR_API_KEY}**
-8. API GET FINAL	**https://sheets.googleapis.com/v4/spreadsheets/1QQnJadZm5iwF2aBqy5ByllxV-WIH9Wf-7D4wmtzibsk/values/dades!A1:g44?key=AIzaSyB6KLXPqUPIAB05O4r4C8goHZx3e3dAYKc**
+1. keyuser (albertprofe):	**AIzaSyB6KLXPqUPIAB05O4r4C8goHZx3e3dAYKc**
+2. domain:			**https://sheets.googleapis.com**
+3. sheet id:			**1QQnJadZm5iwF2aBqy5ByllxV-WIH9Wf-7D4wmtzibsk**	
+4. query your SHEET (1):	**/v4/spreadsheets/{spreadsheetId}**
+5. query your SHEET (2):	**values/Sheet1!A1:D5**
+6. API GET:			**https://sheets.googleapis.com/v4/spreadsheets/1QQnJadZm5iwF2aBqy5ByllxV-WIH9Wf-7D4wmtzibsk/values/dades!A1:g44**	
+7. query your KEY:		**?key={YOUR_API_KEY}**
+8. API GET FINAL:		**https://sheets.googleapis.com/v4/spreadsheets/1QQnJadZm5iwF2aBqy5ByllxV-WIH9Wf-7D4wmtzibsk/values/dades!A1:g44?key=AIzaSyB6KLXPqUPIAB05O4r4C8goHZx3e3dAYKc**
 	
 	
 ## BACKENDLESS
