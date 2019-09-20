@@ -17,32 +17,50 @@ import org.h2.tools.DeleteDbFiles;
  */
 public class HelloWorld {
 
-    /**
-     * Called when ran from command line.
-     *
-     * @param args ignored
-     */
-    public static void main(String... args) throws Exception {
-        // delete the database named 'test' in the user home directory
-       // DeleteDbFiles.execute("~", "test", true);
+	/**
+	 * Called when ran from command line.
+	 *
+	 * @param args ignored
+	 */
+	public static void main(String... args) throws Exception {
+		// delete the database named 'test' in the user home directory
+		// DeleteDbFiles.execute("~", "test", true);
 
-        Class.forName("org.h2.Driver");
-        Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/mydb","sa", "a");
-        Statement stat = conn.createStatement();
+		Class.forName("org.h2.Driver");
+		Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/mydb", "sa", "a");
+		Statement stat = conn.createStatement();
 
-        // this line would initialize the database
-        // from the SQL script file 'init.sql'
-        // stat.execute("runscript from 'init.sql'");
+		// this line would initialize the database
+		// from the SQL script file 'init.sql'
+		// stat.execute("runscript from 'init.sql'");
 
-        //stat.execute("create table test(id int primary key, name varchar(255))");
-        stat.execute("insert into test values(3, 'Natalia')");
-        ResultSet rs;
-        rs = stat.executeQuery("select * from test");
-        while (rs.next()) {
-            System.out.println(rs.getString("name"));
-        }
-        stat.close();
-        conn.close();
-    }
+		//stat.execute("create table test(id int primary key, name varchar(255))");
+		stat.execute("insert into test values(5, 'Luis','John')");
+		stat.execute("insert into test values(6, 'Laia','Cruz')");
+
+		ResultSet rs;
+		rs = stat.executeQuery("select * from test");
+		
+		while (rs.next()) {
+			System.out.println(rs.getString("name"));
+		}
+
+		stat.close();
+		conn.close();
+
+	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
