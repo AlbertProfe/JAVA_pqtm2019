@@ -11,7 +11,7 @@ KEYS
 <your_app_key>	4e905f6dae559e8e2d4eb49586a331d5
 
 APIS
-https://api.tmb.cat/v1/transit/parades? app_id=<your_app_id>&app_key=<your_app_key>
+https://api.tmb.cat/v1/transit/parades?app_id=<your_app_id>&app_key=<your_app_key>
 https://api.tmb.cat/v1/transit/parades?app_id=3bee4085&app_key=4e905f6dae559e8e2d4eb49586a331d5
 https://api.tmb.cat/v1/ibus/stops/2775?app_id=3bee4085&app_key=4e905f6dae559e8e2d4eb49586a331d5
 
