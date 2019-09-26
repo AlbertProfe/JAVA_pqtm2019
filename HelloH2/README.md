@@ -42,7 +42,7 @@ More information: https://h2database.com
 
 ## SQL cheatsheet
 
-![SQL cheatsheet](https://github.com/AlbertProfe/JAVA_pqtm2019/blob/master/HelloH2/SQL-cheat-sheet.pdf)
+SQL Cheatsheet (https://github.com/AlbertProfe/JAVA_pqtm2019/blob/master/HelloH2/SQL-cheat-sheet.pdf)
 
 ## API JDBC 1.5
 
