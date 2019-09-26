@@ -39,6 +39,11 @@ More information: https://h2database.com
 | Footprint (JDBC client driver) | ~500 KB | ~600 KB | ~1.5 MB | ~1 MB | ~700 KB |
 
 
+
+## SQL cheatsheet
+
+![SQL cheatsheet](https://github.com/AlbertProfe/JAVA_pqtm2019/blob/master/HelloH2/SQL-cheat-sheet.pdf)
+
 ## API JDBC 1.5
 
 https://www.cs.mun.ca/java-api-1.5/guide/jdbc/getstart/GettingStartedTOC.fm.html
