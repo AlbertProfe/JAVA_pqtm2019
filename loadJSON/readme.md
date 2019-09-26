@@ -11,9 +11,9 @@ KEYS
 <your_app_key>	4e905f6dae559e8e2d4eb49586a331d5
 
 APIS
-https://api.tmb.cat/v1/transit/parades?app_id=<your_app_id>&app_key=<your_app_key>
-https://api.tmb.cat/v1/transit/parades?app_id=3bee4085&app_key=4e905f6dae559e8e2d4eb49586a331d5
-https://api.tmb.cat/v1/ibus/stops/2775?app_id=3bee4085&app_key=4e905f6dae559e8e2d4eb49586a331d5
+Without keys: https://api.tmb.cat/v1/transit/parades?app_id=<your_app_id>&app_key=<your_app_key>
+With keys: https://api.tmb.cat/v1/transit/parades?app_id=3bee4085&app_key=4e905f6dae559e8e2d4eb49586a331d5
+With keys: https://api.tmb.cat/v1/ibus/stops/2775?app_id=3bee4085&app_key=4e905f6dae559e8e2d4eb49586a331d5
 
 
 ![API rest TMB](https://github.com/AlbertProfe/JAVA_pqtm2019/blob/master/loadJSON/transit-model.png)
@@ -23,8 +23,14 @@ output
 https://api.tmb.cat/v1/ibus/stops/2775?app_id=3bee4085&app_key=4e905f6dae559e8e2d4eb49586a331d5
 
 {"status":"success","data":{"ibus":[{"routeId":"0230","line":"23","text-ca":"4 min","t-in-s":299,"destination":"Parc Logístic","t-in-min":4}]}}
+...
+
 
 https://api.tmb.cat/v1/transit/parades?app_id=3bee4085&app_key=4e905f6dae559e8e2d4eb49586a331d5
+
+{"type":"FeatureCollection","features":[{"type":"Feature","id":"PARADES_ACTIVES.680249","geometry":{"type":"Point","coordinates":[2.198985,41.393104]},"geometry_name":"GEOMETRY","properties":{"ID_PARADA":680249,"CODI_PARADA":2,"NOM_PARADA":"Av Icària - Àlaba","DESC_PARADA":"Av. Icària/Frederic Mompou","CODI_INTERC":0,"NOM_INTERC":null,"NOM_TIPUS_PARADA":"NOU4MS","NOM_TIPUS_SIMPLE_PARADA":"Marquesina ","DESC_TIPUS_PARADA":"Nova Marq. Pal·li Simple","TIPIFICACIO_PARADA":"NXB","ADRECA":"Av. Icària, 193","ID_POBLACIO":748,"NOM_POBLACIO":"Barcelona","ID_DISTRICTE":621,"NOM_DISTRICTE":"Sant Martí","DATA":"2019-09-25Z","NOM_VIA":"Avinguda d'Icària","NOM_PROPERA_VIA":"Carrer de Frederic Mompou"}},{"type":"Feature","id":"PARADES_ACTIVES.689727","geometry":{"type":"Point","coordinates":[2.196311,41.390423]},"geometry_name":"GEOMETRY","properties":{"ID_PARADA":689727,"CODI_PARADA":698,"NOM_PARADA":"Av Icària - Joan Miró","DESC_PARADA":"Icària/Rosa Sensat","CODI_INTERC":38,"NOM_INTERC":"Icària","NOM_TIPUS_PARADA":"NOU4MS","NOM_TIPUS_SIMPLE_PARADA":"Marquesina ","DESC_TIPUS_PARADA":"Nova Marq. Pal·li Simple","TIPIFICACIO_PARADA":"NXB","ADRECA":"Av. Icària, 142-150","ID_POBLACIO":748,"NOM_POBLACIO":"Barcelona","ID_DISTRICTE":621,"NOM_DISTRICTE":"Sant Martí","DATA":"2019-
+...
+
 
 
 ## OPEN DATA BCN
