@@ -16,6 +16,8 @@ https://api.tmb.cat/v1/transit/parades?app_id=3bee4085&app_key=4e905f6dae559e8e2
 https://api.tmb.cat/v1/ibus/stops/2775?app_id=3bee4085&app_key=4e905f6dae559e8e2d4eb49586a331d5
 
 
+![API rest TMB](https://github.com/AlbertProfe/JAVA_pqtm2019/blob/master/loadJSON/transit-model.jpg)
+
 
 output
 https://api.tmb.cat/v1/ibus/stops/2775?app_id=3bee4085&app_key=4e905f6dae559e8e2d4eb49586a331d5
