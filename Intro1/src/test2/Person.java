@@ -5,6 +5,7 @@ public class Person
   private String firstName;
   private String lastName;
   private int age;
+  private Dog dog;
 
   
     
@@ -71,7 +72,7 @@ public void setAge(int age) {
 
 @Override
 public String toString() {
-	return "Person [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + "]";
+	return "Person [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + " Dog_Person(object)= "+ dog +"]";
 }
 
 
@@ -85,6 +86,20 @@ public int hashCode() {
 	result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
 	result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
 	return result;
+}
+
+
+
+
+public Dog getDog() {
+	return dog;
+}
+
+
+
+
+public void setDog(Dog dog) {
+	this.dog = dog;
 }
 
 
@@ -113,6 +128,11 @@ public boolean equals(Object obj) {
 		return false;
 	return true;
 }
+
+
+
+
+
   
   
   

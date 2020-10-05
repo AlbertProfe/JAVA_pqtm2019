@@ -38,6 +38,35 @@ public class Hello {
 		System.out.println(people);
 		
 		people.get(0);
+		
+		System.out.println("---------------------------------------------");
+		
+		luis = null;
+		
+		System.out.println(luis);
+		
+		//luis.studyJava();
+		
+		luis = natalia;
+		
+		System.out.println(luis.studyJava());
+		
+		
+		luis = new Person ("Jhon", "Smith", 15);
+		System.out.println(luis);
+		
+		
+		Dog boby = new Dog ("Boby", 1);
+		
+		luis.setDog(boby);
+		
+		System.out.println(luis);
+		
+		
+		
+		
+		
+		
 	}
 
 }
