@@ -5,7 +5,7 @@ public class Dog {
 	private String name;
 	private int age;
 	
-		
+	//constructor	
 	public Dog(String name, int age) {
 		super();
 		this.name = name;
