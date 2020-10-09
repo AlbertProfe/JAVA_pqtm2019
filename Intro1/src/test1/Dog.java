@@ -1,4 +1,4 @@
-package test2;
+package test1;
 
 public class Dog {
 	
