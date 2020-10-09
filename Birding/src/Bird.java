@@ -12,7 +12,7 @@ public class Bird {
 	}
 	
 	//methods
-	
+	// birds ...
 	
 	////getters and setters
 
