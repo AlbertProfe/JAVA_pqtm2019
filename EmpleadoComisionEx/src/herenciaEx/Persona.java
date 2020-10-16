@@ -10,20 +10,21 @@ public class Persona {
 		this.fechaNacimiento = fechaNacimiento;
 		this.dni = dni;
 	}
-	public Persona(String nombre,  int dni) {
+
+	public Persona(String nombre, int dni) {
 		this.nombre = nombre;
 		this.fechaNacimiento = null;
 		this.dni = dni;
 	}
 
-	
-	
-	  public void imprimirDatos() { System.out.print("DNI: ");
-	  System.out.println(dni); System.out.println("NOMBRE: " + nombre);
-	  System.out.print("FECHA DE NACIMIENTO: "); fechaNacimiento.imprimir();
-	  System.out.println(); }
-	 
-	 
+	public void imprimirDatos() {
+		System.out.print("DNI: ");
+		System.out.println(dni);
+		System.out.println("NOMBRE: " + nombre);
+		System.out.print("FECHA DE NACIMIENTO: ");
+		fechaNacimiento.imprimir();
+		System.out.println();
+	}
 
 	public String getNombre() {
 		return nombre;

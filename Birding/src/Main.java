@@ -9,7 +9,7 @@ public class Main {
 		//Create a Birds Data Base
 		BirdsDB db = new BirdsDB( "birding" );
 		//BirdsDB dbRoger = new BirdsDB( "Rogerbirding" );
-		
+		db.setBirds(InitialBirdsFilling.birds);
 		
 		//Ask user from menu by scanner
 		Scanner reader = new Scanner(System.in);

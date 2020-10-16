@@ -1,6 +1,8 @@
 package herenciaEx;
 
-public class Empleado extends Persona {
+import java.io.Serializable;
+
+public class Empleado extends Persona implements Serializable {
 	protected int sueldoBase;
 
 	public Empleado(String nombre, Fecha fechaNacimiento, int dni, int sueldoBase) {
@@ -12,9 +14,8 @@ public class Empleado extends Persona {
 		return sueldoBase;
 	}
 
-	public void imprimirDatos() {
-		super.imprimirDatos();
-		System.out.print("SUELDO: ");
-		System.out.println(sueldoBase);
-	}
+	
+	  public void imprimirDatos() { super.imprimirDatos();
+	  System.out.print("SUELDO: "); System.out.println(sueldoBase); }
+	 
 }

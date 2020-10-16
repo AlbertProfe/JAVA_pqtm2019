@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class MenuOptions {
+	
 	private ArrayList<String> options;
 	
 	public MenuOptions() {

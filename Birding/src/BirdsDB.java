@@ -46,9 +46,9 @@ public class BirdsDB {
 	}
 	
 	////addObservation
-	public void addObservation(Bird bird) {	
-		
-		bird.setObservations(bird.getObservations() + 1);
+	public void addObservation(Bird bird, int observations) {	
+	
+		bird.setObservations(bird.getObservations() + observations);
 	}
 	
 	////showBird
@@ -69,6 +69,18 @@ public class BirdsDB {
 		return chain;
 
 	}
+
+
+	public ArrayList<Bird> getBirds() {
+		return birds;
+	}
+
+
+	public void setBirds(ArrayList<Bird> birds) {
+		this.birds = birds;
+	}
+	
+	
 	
 
 }

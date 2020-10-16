@@ -6,6 +6,8 @@ public class EmpleadoComision extends Empleado {
 
 	public EmpleadoComision(String nombre, Fecha fechaNacimiento, int dni, int sueldoBase, double porcentajeComision) {
 		super(nombre, fechaNacimiento, dni, sueldoBase);
+		
+		
 		this.porcentajeComision = porcentajeComision;
 		this.dineroVentas = 0;
 	}

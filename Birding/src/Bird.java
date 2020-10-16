@@ -43,6 +43,10 @@ public class Bird {
 	public void addObservation() {
 		this.observations ++;
 	}
+	
+	public void addObservation(int observations) {
+		this.observations += observations;
+	}
 
 	@Override
 	public String toString() {

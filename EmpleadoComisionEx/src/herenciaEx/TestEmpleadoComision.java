@@ -6,6 +6,7 @@ public class TestEmpleadoComision {
 		System.out.println("Lista de personas");
 		System.out.println("DNI Nombre Fecha de Nacimiento");
 		System.out.println("------------------------------------------------------------");
+		
 		for (Persona p : personas) {
 			System.out.printf("%-9d %-30s", p.getDni(), p.getNombre());
 			p.getFechaNacimiento().imprimir();
@@ -24,23 +25,53 @@ public class TestEmpleadoComision {
 		
 		
 		//Fecha f1 = new Fecha();
-		/*
-		 * EmpleadoComision ec = new EmpleadoComision("Fuckencio Martinez", new
-		 * Fecha(15, 3, 1979), 123456, 1000, 20); ec.vender(200);
-		 * System.out.println("Sueldo: " + ec.getSueldo()); System.out.println("");
-		 * ec.imprimirDatos(); System.out.println("---------------\n");
-		 * ec.setFechaNacimiento(new Fecha(15,4,1979)); ec.imprimirDatos();
-		 */
 		
-	
-		
-		  Persona p1 = new Empleado("Jordi Gasol", new Fecha(25, 3, 1985), 123456,1300);
-		 
-		 
-		 Empleado e1 = (Empleado) p1;
-		 p1.imprimirDatos();
+		  EmpleadoComision ec = new EmpleadoComision("Fuckencio Martinez", new
+		  Fecha(15, 3, 1979), 123456, 1000, 20); 
+		  
+		  ec.vender(200);
+		  ec.vender(1200);
+		  ec.vender(6200);
+		  
+		  
+		  System.out.println("Sueldo: " + ec.getSueldo()); 
+		  
+		  System.out.println("");
+		  
+		  
+		  ec.imprimirDatos();
+		  
 		  System.out.println("---------------\n");
-		  e1.imprimirDatos();
+		  ec.setFechaNacimiento(new Fecha(15,4,1979));
+		  
+		  ec.imprimirDatos();
+		 
+		  boolean isEmpleadoComison = ec instanceof EmpleadoComision;
+		  System.out.println("is ec EmpleadoComison? " + isEmpleadoComison);
+		  
+		  boolean isECPersona = ec instanceof EmpleadoComision;
+		  System.out.println("is ec Persona? " + isECPersona);
+		  
+		
+		
+		  Persona p1 = new Empleado("Jordi Gasol", new Fecha(25, 3, 1985),
+		  123456,1300);
+		  
+		  p1.imprimirDatos();
+		  
+		  
+		  boolean isPersona = p1 instanceof Persona;
+		  System.out.println("is p1 Persona? " + isPersona);
+		  
+		  boolean isEmpleado = p1 instanceof Empleado;
+		  System.out.println("is p1 Empleado? " + isEmpleado);
+		 
+		 
+		 
+		/*
+		 * Empleado e1 = (Empleado) p1; p1.imprimirDatos();
+		 * System.out.println("---------------\n"); e1.imprimirDatos();
+		 */
 		  // exactamente igual 
 		 
 // Error de ejecucion asignacion de clases

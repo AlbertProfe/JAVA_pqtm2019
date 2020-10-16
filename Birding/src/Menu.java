@@ -16,7 +16,7 @@ public class Menu {
 		MenuOptions options = new MenuOptions();
 		
 	    while (true) {
-	        String command = Utils.ask(this.reader, "Option?");
+	        String command = UtilsIO.ask(this.reader, "Option?");
 	        
 	        try {
 	        	options.getOption(command);	        	
@@ -27,13 +27,13 @@ public class Menu {
 	        if (command.equals("Quit")) {
 	            break;
 	        } else if (command.equals("Add")) {
-	        	Utils.add(this.reader,db);
+	        	Controller.add(this.reader,db);
 	        } else if (command.equals("Observation")) {
-	        	Utils.observation(this.reader,db);
+	        	Controller.observation(this.reader,db);
 	        } else if (command.equals("Show")) {
-	        	Utils.show(this.reader,db);
+	        	Controller.show(this.reader,db);
 	        } else if (command.equals("Statistics")) {
-	        	Utils.statistics(db);
+	        	Controller.statistics(db);
 	        } 
 	    }
 	}
