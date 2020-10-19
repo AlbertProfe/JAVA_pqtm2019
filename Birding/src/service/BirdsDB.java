@@ -1,9 +1,12 @@
+package service;
+
 
 import java.util.ArrayList;
+import model.Bird;
 
+//A DB made from a list
+//Contains all bird objects created in the program	
 public class BirdsDB {
-	//A DB made from a list
-	//Contains all bird objects created in the program
 	
 	
 	//create ArrayObject of Bird objects
@@ -12,7 +15,7 @@ public class BirdsDB {
 
 	public BirdsDB( String name) {
 		this.birds =  new ArrayList<Bird>();
-		this.dbName = name;
+		this.setDbName(name);
 	}
 	
 	
@@ -42,7 +45,8 @@ public class BirdsDB {
 	////dropBird
 	public void deleteBird(Bird bird) {
 		
-		this.birds.remove(this.birds.indexOf(bird));
+		//this.birds.remove(this.birds.indexOf(bird));
+		this.birds.remove(bird);
 	}
 	
 	////addObservation
@@ -61,9 +65,9 @@ public class BirdsDB {
 	//toString
 	@Override
 	public String toString() {
-		String chain = "Bird list: \n";
+		String chain = "\rBirds list: \n";
 		for (Bird bird : this.birds) {
-			chain += bird.getName() + "\n";	
+			chain += "\t" + bird.getName() + ", " + bird.getObservations() + " obs.\n";	
 			//System.out.println("Chain status: "+ chain);
 		}
 		return chain;
@@ -79,6 +83,21 @@ public class BirdsDB {
 	public void setBirds(ArrayList<Bird> birds) {
 		this.birds = birds;
 	}
+	
+	
+
+
+	public String getDbName() {
+		return dbName;
+	}
+
+
+	public void setDbName(String dbName) {
+		this.dbName = dbName;
+	}
+
+
+	
 	
 	
 	

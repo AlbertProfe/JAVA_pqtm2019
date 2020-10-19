@@ -1,3 +1,5 @@
+package model;
+
 public class Bird {
 	//attributes
 	private String name;

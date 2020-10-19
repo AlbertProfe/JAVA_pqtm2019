@@ -1,10 +1,19 @@
+package controller;
+
 import java.util.Scanner;
+
+import model.Bird;
+import service.BirdsDB;
+import utils.UtilsIO;
 
 public class Controller {
 	
 	//static FrontController methods
 	public static void add(Scanner reader, BirdsDB db) {  
 		//Ask for input data
+		
+		
+		
 		String name = UtilsIO.askForName(reader);
 		String nameLatin = UtilsIO.askForNameLatin(reader);
 		

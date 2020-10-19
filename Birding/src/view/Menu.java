@@ -1,4 +1,11 @@
+package view;
+
 import java.util.Scanner;
+
+import controller.Controller;
+import service.BirdsDB;
+import utils.UtilsIO;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -16,13 +23,15 @@ public class Menu {
 		MenuOptions options = new MenuOptions();
 		
 	    while (true) {
+	    	
+	    	options.showMenu();
 	        String command = UtilsIO.ask(this.reader, "Option?");
 	        
-	        try {
-	        	options.getOption(command);	        	
-	        } catch (Exception e) {
-	        	System.out.println("Unknown command!");
-	        }
+		        try {
+		        	options.getOption(command);	        	
+		        } catch (Exception e) {
+		        	System.out.println("Unknown command!");
+		        }
 	
 	        if (command.equals("Quit")) {
 	            break;
@@ -37,4 +46,5 @@ public class Menu {
 	        } 
 	    }
 	}
+
 }

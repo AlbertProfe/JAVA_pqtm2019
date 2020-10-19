@@ -1,5 +1,10 @@
-import java.util.ArrayList;
+package app;
+
 import java.util.Scanner;
+
+import service.BirdsDB;
+import utils.InitialBirdsFilling;
+import view.Menu;
 
 public class Main {
 

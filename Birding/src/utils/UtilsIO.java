@@ -1,3 +1,5 @@
+package utils;
+
 import java.util.Scanner;
 
 public class UtilsIO {
@@ -42,10 +44,5 @@ public class UtilsIO {
 		
 	}
 	
-	
-	
-		
-	
-
 }
 
