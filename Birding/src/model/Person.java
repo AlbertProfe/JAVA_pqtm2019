@@ -1,13 +1,13 @@
 package model;
 
-public class Bird {
+public class Person {
 	//attributes
 	private String name;
 	private String nameLatin;
 	private int observations;
 	
 	//constructor
-	public Bird(String name,  String nameLatin, int observations ) {
+	public Person(String name,  String nameLatin, int observations ) {
 		this.name = name;
 		this.nameLatin = nameLatin;
 		this.observations = observations;

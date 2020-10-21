@@ -2,7 +2,7 @@ package app;
 
 import java.util.Scanner;
 
-import service.BirdsDB;
+import service.PeopleDB;
 import utils.InitialBirdsFilling;
 import view.Menu;
 
@@ -12,7 +12,7 @@ public class Main {
 		// Watching up birds!
 		
 		//Create a Birds Data Base
-		BirdsDB db = new BirdsDB( "birding" );
+		PeopleDB db = new PeopleDB( "birding" );
 		//BirdsDB dbRoger = new BirdsDB( "Rogerbirding" );
 		db.setBirds(InitialBirdsFilling.birds);
 		

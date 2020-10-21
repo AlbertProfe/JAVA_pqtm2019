@@ -3,7 +3,7 @@ package view;
 import java.util.Scanner;
 
 import controller.Controller;
-import service.BirdsDB;
+import service.PeopleDB;
 import utils.UtilsIO;
 
 import java.util.ArrayList;
@@ -11,10 +11,10 @@ import java.util.Collections;
 
 public class Menu {		
 	private Scanner reader;
-	private BirdsDB db;
+	private PeopleDB db;
 	
 	
-	public Menu(Scanner reader, BirdsDB db) {
+	public Menu(Scanner reader, PeopleDB db) {
 		this.reader = reader;
 		this.db = db;
 	}

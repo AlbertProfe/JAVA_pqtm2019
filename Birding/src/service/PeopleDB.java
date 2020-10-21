@@ -2,30 +2,30 @@ package service;
 
 
 import java.util.ArrayList;
-import model.Bird;
+import model.Person;
 
 //A DB made from a list
 //Contains all bird objects created in the program	
-public class BirdsDB {
+public class PeopleDB {
 	
 	
 	//create ArrayObject of Bird objects
-	private ArrayList<Bird> birds;
+	private ArrayList<Person> birds;
 	private String dbName;
 
-	public BirdsDB( String name) {
-		this.birds =  new ArrayList<Bird>();
+	public PeopleDB( String name) {
+		this.birds =  new ArrayList<Person>();
 		this.setDbName(name);
 	}
 	
 	
 	//methods
-	public ArrayList<Bird> getArray(){
+	public ArrayList<Person> getArray(){
 		
 		return this.birds;
 	}
 	
-	public Bird getBird(int location) {
+	public Person getBird(int location) {
 		
 		return this.birds.get(location);
 	}
@@ -36,27 +36,27 @@ public class BirdsDB {
 	}
 	
 	////add bird
-	public void addBird(Bird bird) {
+	public void addBird(Person bird) {
 		
 		this.birds.add(bird);
 		//System.out.println("Array length:" + birds.size() ); // Just for checking purposes
 	}
 	
 	////dropBird
-	public void deleteBird(Bird bird) {
+	public void deleteBird(Person bird) {
 		
 		//this.birds.remove(this.birds.indexOf(bird));
 		this.birds.remove(bird);
 	}
 	
 	////addObservation
-	public void addObservation(Bird bird, int observations) {	
+	public void addObservation(Person bird, int observations) {	
 	
 		bird.setObservations(bird.getObservations() + observations);
 	}
 	
 	////showBird
-	public void showBird(Bird bird) {
+	public void showBird(Person bird) {
 		
 		bird.toString();
 	}
@@ -66,7 +66,7 @@ public class BirdsDB {
 	@Override
 	public String toString() {
 		String chain = "\rBirds list: \n";
-		for (Bird bird : this.birds) {
+		for (Person bird : this.birds) {
 			chain += "\t" + bird.getName() + ", " + bird.getObservations() + " obs.\n";	
 			//System.out.println("Chain status: "+ chain);
 		}
@@ -75,12 +75,12 @@ public class BirdsDB {
 	}
 
 
-	public ArrayList<Bird> getBirds() {
+	public ArrayList<Person> getBirds() {
 		return birds;
 	}
 
 
-	public void setBirds(ArrayList<Bird> birds) {
+	public void setBirds(ArrayList<Person> birds) {
 		this.birds = birds;
 	}
 	

@@ -2,14 +2,14 @@ package controller;
 
 import java.util.Scanner;
 
-import model.Bird;
-import service.BirdsDB;
+import model.Person;
+import service.PeopleDB;
 import utils.UtilsIO;
 
 public class Controller {
 	
 	//static FrontController methods
-	public static void add(Scanner reader, BirdsDB db) {  
+	public static void add(Scanner reader, PeopleDB db) {  
 		//Ask for input data
 		
 		
@@ -18,7 +18,7 @@ public class Controller {
 		String nameLatin = UtilsIO.askForNameLatin(reader);
 		
 		//Create object Bird
-		Bird bird = new Bird(name, nameLatin, 0 );
+		Person bird = new Person(name, nameLatin, 0 );
 		
 		
 		//Ask if bird is in BirdsDB
@@ -27,7 +27,7 @@ public class Controller {
 		}
 	}
 			
-	public static void observation(Scanner reader, BirdsDB db) {
+	public static void observation(Scanner reader, PeopleDB db) {
 		//adds observation to bird
 		//get the bird
 		String name = UtilsIO.askForName(reader);
@@ -46,7 +46,7 @@ public class Controller {
 		}
 	}
 	
-	public static void show(Scanner reader, BirdsDB db) { 
+	public static void show(Scanner reader, PeopleDB db) { 
 		//shows single bird data
 		
 		//get the bird
@@ -66,20 +66,20 @@ public class Controller {
 		}
 	}
 	
-	public static void statistics(BirdsDB db) { 
+	public static void statistics(PeopleDB db) { 
 		//Print the complete DB
 		System.out.println(db.toString());
 		
 	}
 	
 	//static Controller methods
-	public static boolean isBirdInDb(Bird bird, BirdsDB db) {	
+	public static boolean isBirdInDb(Person bird, PeopleDB db) {	
 		//Check for empty array
 		if (db.arraySize() == 0 ){
 			return true;
 		}
 		//Ask if bird is in BirdsDB
-		for( Bird dbBird : db.getArray()) {
+		for( Person dbBird : db.getArray()) {
 			//System.out.println("bird object name: "+bird.getName());
 			//System.out.println("dbBird object name: "+dbBird.getName());
 			if( bird.getName().equals(dbBird.getName())) {
@@ -91,10 +91,10 @@ public class Controller {
 		return true;
 	}
 	
-	public static int isBirdInDb(String name, BirdsDB db) {		
+	public static int isBirdInDb(String name, PeopleDB db) {		
 		//Ask if bird is in BirdsDB
 		int i = 0;
-		for( Bird dbBird : db.getArray()) {
+		for( Person dbBird : db.getArray()) {
 			if(name.equals(dbBird.getName())) {
 				return i;
 			}
