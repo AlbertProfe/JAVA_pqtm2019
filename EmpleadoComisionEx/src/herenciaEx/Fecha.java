@@ -3,16 +3,16 @@ package herenciaEx;
 public class Fecha {
 	public int dia;
 	public int mes;
-	public int año;
+	public int anio;
 
-	public Fecha(int nuevoDia, int nuevoMes, int nuevoAño) {
+	public Fecha(int nuevoDia, int nuevoMes, int nuevoAnio) {
 		dia = nuevoDia;
 		mes = nuevoMes;
-		año = nuevoAño;
+		aÃ±o = nuevoAnio;
 	}
 
 	public void imprimir() {
-		System.out.println(dia + "/" + mes + "/" + año);
+		System.out.println(dia + "/" + mes + "/" + anio);
 	}
 
 	public void setDia(int nuevoDia) {
@@ -23,7 +23,7 @@ public class Fecha {
 		mes = nuevoMes;
 	}
 
-	public void setAño(int nuevoAño) {
-		año = nuevoAño;
+	public void setAnio(int nuevoAnio) {
+		anio = nuevoAioo;
 	}
 }
